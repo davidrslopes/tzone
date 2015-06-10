@@ -1,0 +1,23 @@
+{
+	"name": "trailzone",
+	"version": "1.0.0",
+	"authors": [
+		"David RS Lopes <davidrslopes@gmail.com>"
+	],
+	"description": "Custom WordPress theme for TrailZone, based on Twitter Bootstrap v3",
+	"private": false,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "jquery#1",
+		"bootstrap": "~3.3.4",
+		"wp-bootstrap-navwalker": "git://github.com/twittem/wp-bootstrap-navwalker.git",
+		"fontawesome": "~4.3.0",
+		"ionicons": "~2.0.1",
+	}
+}
