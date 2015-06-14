@@ -24,17 +24,19 @@ get_header(); ?>
 ?>
 
 	<section>
-		<header>
-			<h1>TrailZone - Trail running & trekking</h1>
+		<header class="text-center">
+			<img class="img-responsive center-block" src="<?php echo TRAILZONE_THEME_URI; ?>/assets/img/trailzone-logo.png" title="TrailZone - Trail running & trekking Portugal" alt="TrailZone - Trail running & trekking Portugal">
 		</header>
-		<p>Bem vindo.</p>
+		<article>
+			<p>Bem vindo.</p>
+		</article>
 	</section>
 
 <?php else: ?>
 
-	<section>
-		<header>
-			<h1>TrailZone - Trail running & trekking</h1>
+	<section class="col-md-offset-3 col-md-6 tz-offline">
+		<header class="text-center">
+			<a href="http://trailzone.net" title="TrailZone.net" alt="TrailZone.net"><img class="img-responsive center-block" src="<?php echo TRAILZONE_THEME_URI; ?>/assets/img/trailzone-logo.png" title="TrailZone - Trail running & trekking Portugal" alt="TrailZone - Trail running & trekking Portugal"></a>
 		</header>
 		<p>Este site está em fase de densenvolvimento, por favor volte mais tarde ou volte para o portal <a href="http://trailzone.net" title="TrailZone.net" alt="TrailZone.net">aqui</a>.</p>
 	</section>
