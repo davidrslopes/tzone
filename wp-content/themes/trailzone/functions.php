@@ -25,7 +25,7 @@ define ( 'TRAILZONE_ROOT', 		get_site_url() );
 //require TRAILZONE_THEME_DIR . '/functions/admin/cpt-eventos.php';
 //require TRAILZONE_THEME_DIR . '/functions/admin/cpt-inscricoes.php';
 
-//THE TAXONIMIES
+//THE TAXONOMIES
 //require TRAILZONE_THEME_DIR . '/functions/admin/tax-provas.php';
 //require TRAILZONE_THEME_DIR . '/functions/admin/tax-escaloes.php';
 
@@ -33,10 +33,7 @@ define ( 'TRAILZONE_ROOT', 		get_site_url() );
 //WORDPRESS THEME FUNCTIONS
 
 // THE THEME SETUP
-//require TRAILZONE_THEME_DIR . '/functions/setup.php';
+require TRAILZONE_THEME_DIR . '/functions/setup.php';
 
-// THE SCRIPTS
+// THE SCRIPTS - enqueue/dequeue/requeue scripts and styles
 require TRAILZONE_THEME_DIR . '/functions/scripts.php';
-
-// THE STYLES
-//require TRAILZONE_THEME_DIR . '/functions/styles.php';
