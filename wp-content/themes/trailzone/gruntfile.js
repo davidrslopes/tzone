@@ -15,9 +15,17 @@ module.exports = function(grunt) {
 				src: "jquery/dist",
 				dest: "src/vendor/jquery",
 			},
-			twbsdist: {
+			bootstrap: {
 				src: "bootstrap/dist",
 				dest: "src/vendor/bootstrap",
+			},
+			bootstrap_less: {
+				src: "bower_components/bootstrap/less",
+				dest: "src/less/bootstrap"
+			},
+			bootstrap_plugins: {
+				src: "bootstrap/js",
+				dest: "src/vendor/bootstrap/js",
 			},
 			fontawesome_fonts: {
 				src: "bower_components/fontawesome/fonts",
@@ -98,7 +106,7 @@ module.exports = function(grunt) {
 				src: [
 					'src/vendor/jquery/jquery.js',
 					'src/vendor/bootstrap/js/bootstrap.js',
-					'src/js/script.js',
+					'src/js/trailzone-script.js',
 				],
 				dest: 'src/js/scripts.js',
 				nonull: true,
@@ -122,8 +130,8 @@ module.exports = function(grunt) {
 		 ***************************************************************************/
 
 		watch: {
-			options : {
-				livereload : true
+			options: {
+				livereload: true, // Live Reload enabled - https://github.com/gruntjs/grunt-contrib-watch/blob/master/docs/watch-examples.md#enabling-live-reload-in-your-html
 			},
 			php:{
 				files: ['*.php', '**/*.php'],
@@ -134,15 +142,15 @@ module.exports = function(grunt) {
 			},
 			cssfiles: {
 				files: ['src/css/*.css'],
-				tasks: ['cssmin'],
+				tasks: ['cssmin']
 			},
 			jsfiles: {
 				files: ['src/js/*.js'],
-				tasks: ['concat', 'uglify'],
+				tasks: ['concat', 'uglify']
 			},
 			images: {
 				files: ['src/img/**/*.{png,jpg,gif,svg}'],
-				tasks: ['imagemin'],
+				tasks: ['imagemin']
 			},
 		} // watch
 	}); // grunt.initConfig
