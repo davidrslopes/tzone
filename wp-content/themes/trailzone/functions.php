@@ -36,7 +36,7 @@ define ( 'TRAILZONE_ROOT', 		get_site_url() );
 //require TRAILZONE_THEME_DIR . '/functions/setup.php';
 
 // THE SCRIPTS
-//require TRAILZONE_THEME_DIR . '/functions/scripts.php';
+require TRAILZONE_THEME_DIR . '/functions/scripts.php';
 
 // THE STYLES
 //require TRAILZONE_THEME_DIR . '/functions/styles.php';
